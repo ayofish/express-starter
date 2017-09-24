@@ -5,7 +5,7 @@
 'use strict';
 
 var events = require('events');
-var EventEmitter = events..EventEmitter;
+var EventEmitter = events.EventEmitter;
 var Thing = require('./thing.model');
 var ThingEvents = new EventEmitter();
 

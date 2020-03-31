@@ -12,6 +12,7 @@ var http = require('http');
 
 // Connect to MongoDB
 mongoose.connect(config.mongo.uri, config.mongo.options);
+var promise = mongoose.createConnection(config.mongo.uri, config.mongo.options);
 mongoose.connection.on('error', function(err) {
   console.error('MongoDB connection error: ' + err);
   process.exit(-1);
